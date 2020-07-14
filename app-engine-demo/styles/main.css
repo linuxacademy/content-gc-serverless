@@ -35,6 +35,14 @@
 .outerMedia:hover,
 .outerMedia:hover h4,
 .outerMedia:hover p {
-	background-color: #db4c3f;
+	background-color: #060C59;
 	color: white;
+}
+.btn-success {
+    background-color: orange;
+    border-color: orange;
+}
+.btn-success:hover {
+    background-color: darkorange;
+    border-color: darkorange;
 }
