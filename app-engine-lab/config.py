@@ -44,6 +44,6 @@ SQLALCHEMY_DATABASE_URI = \
 #
 # You can adjust the max content length and allow extensions settings to allow
 # larger or more varied file types if desired.
-CLOUD_STORAGE_BUCKET = 'la-musicgallery-001'
+CLOUD_STORAGE_BUCKET = '[YOUR_BUCKET_NAME]'
 MAX_CONTENT_LENGTH = 8 * 1024 * 1024
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
