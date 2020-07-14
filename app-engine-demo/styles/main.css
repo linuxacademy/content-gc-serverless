@@ -20,6 +20,9 @@
 	text-align: right;
 	padding-top: 40px;
 }
+.media {
+	margin-top: 15px;
+}
 .media-body h4 {
 	color: #333;
 }
