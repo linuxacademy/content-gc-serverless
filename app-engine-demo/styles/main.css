@@ -29,6 +29,9 @@
 .media-body p {
 	color: #666;
 }
+.album-title {
+	margin-left: 15px;
+}
 .outerMedia:hover,
 .outerMedia:hover h4,
 .outerMedia:hover p {
