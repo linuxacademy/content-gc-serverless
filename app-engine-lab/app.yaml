@@ -17,7 +17,8 @@
 # for details.
 
 runtime: python27
-env: standard
+api_version: 1
+threadsafe: true
 
 handlers:
 - url: /styles
