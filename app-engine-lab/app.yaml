@@ -16,7 +16,7 @@
 # See https://cloud.google.com/appengine/docs/python/config/appconfig
 # for details.
 
-runtime: python3
+runtime: python38
 env: standard
 
 handlers:
