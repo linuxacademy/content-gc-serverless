@@ -17,7 +17,7 @@
 # for details.
 
 runtime: python3
-api_version: 1
+env: standard
 
 handlers:
 - url: /styles
