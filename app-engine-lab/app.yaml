@@ -18,7 +18,6 @@
 
 runtime: python3
 api_version: 1
-threadsafe: true
 
 handlers:
 - url: /styles
