@@ -9,10 +9,8 @@ def greetings_http(request):
         name = request_args['name']
     else:
         name = 'my friend'
-    return '<html><head>\
-        <style>body { background-color:#060C59; } div {width: 75%; height: 100%; \
-        background-image-url: https://raw.githubusercontent.com/linuxacademy/content-gc-serverless/master/cloud-functions-demo/assets/acg-logo.png} \
-        div h1 { margin-top: 80px; font-size: 48px; color: white;}</style></head>\
-        <body><div>\
-        <h1>Greetings from A Cloud Guru, {}!</h1>\
+    return '<html><head></head>\
+        <body style="background-color:#060C59;"><div style="height:100%;background-repeat:no-repeat;background-position:center;\
+        background-image:url(https://raw.githubusercontent.com/linuxacademy/content-gc-serverless/master/cloud-functions-demo/assets/acg-logo.png);">\
+        <h1 style="padding-top:100px;font-size:48px;color:white;text-align:center;">Greetings from A Cloud Guru, {}!</h1>\
         </div></body></html>'.format(escape(name))
