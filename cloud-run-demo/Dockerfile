@@ -1,23 +1,13 @@
-# The Dockerfile defines the image's environment
-# Import Python runtime and set up working directory
-FROM python:3
-ENV PYBASE /pybase
-ENV PYTHONUSERBASE $PYBASE
-ENV PATH $PYBASE/bin:$PATH
+# Use the official lightweight Python image.
+# https://hub.docker.com/_/python
+FROM python:3.7-slim
 
-WORKDIR /app
-ADD . /app
+# Copy local code to container image
+ENV APP_HOME /app
+WORKDIR $APP_HOME
+COPY . ./
 
-RUN pip install virtualenv
-RUN virtualenv venv
-RUN source venv/bin/activate
+# Install dependencies.
+RUN pip install Flask gunicorn
 
-# Install any necessary dependencies
-# RUN pip install -r requirements.txt
-RUN venv/bin/pip install -r requirements.txt
-
-# Open port 80 for serving the webpage
-EXPOSE 80
-
-# Run main.py when the container launches
-CMD ["python", "main.py"]
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 app:app
