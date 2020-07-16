@@ -1,9 +1,49 @@
 <!DOCTYPE html>
 <html>
+<style type="text/css">
+body {
+	background-color: #060C59;
+}
+#content {
+	height: 100%;
+	width: 100%;
+}
+#logo {
+	height: 200px;
+	width: 1013px;
+	background-repeat: no-repeat;
+	background-image: url("https://raw.githubusercontent.com/linuxacademy/content-gc-serverless/master/cloud-functions-demo/assets/acg-logo.png");
+	animation: 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 normal both running scale-up-center;
+	overflow: hidden;
+	background-size: 100%;
+	background-position: 50% 50%;
+	margin: 200px auto;
+}
+@-webkit-keyframes scale-up-center {
+	0% {
+	-webkit-transform:scale(.5);
+	transform:scale(.5)
+	}
+	100% {
+	-webkit-transform:scale(1);
+	transform:scale(1)
+	}
+	}
+	@keyframes scale-up-center {
+	0% {
+	-webkit-transform:scale(.5);
+	transform:scale(.5)
+	}
+	100% {
+	-webkit-transform:scale(1);
+	transform:scale(1)
+	}
+}
+</style>
 
 <body>
-    <h1 style="color:blue">Hello Google DevOps Engineers!</h1>
-    <h2>Let's learn about Cloud Build!</h2>
+<div id="content">
+  <div id="logo"></div>
+</div>
 </body>
-
 </html>
