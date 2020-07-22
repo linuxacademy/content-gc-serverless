@@ -4,7 +4,7 @@ def acg_fireworks(request):
     <html>
     <head>
     <meta charset='utf-8'>
-    <title>jQuery-fireworks Demo</title>
+    <title>Setting Off Fireworks with Cloud Functions</title>
     <style>
     html,* { margin:0; padding:0}
     body { width:100%; height:100%;}
